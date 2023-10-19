@@ -34,13 +34,6 @@ echo $OUTPUT->header();
 
 echo $OUTPUT->heading(get_string('pageheader', 'tool_upgradecopy'));
 
-if (!$DB->replace_all_text_supported()) {
-    echo $OUTPUT->notification(get_string('notimplemented', 'tool_replace'));
-    echo $OUTPUT->footer();
-    die;
-}
-
-
 $form = new \tool_upgradecopy\forms\upgradecopy();
 
 if (!$data = $form->get_data()) {
