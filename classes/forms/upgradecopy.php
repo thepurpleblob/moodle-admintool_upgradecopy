@@ -40,6 +40,12 @@ class upgradecopy extends \moodleform {
         $mform->addElement('header', 'upgradecopyhdr', get_string('pluginname', 'tool_upgradecopy'));
         $mform->setExpanded('upgradecopyhdr', true);
 
+        $mform->addElement('text', 'command', get_string('command', 'tool_upgradecopy'), 'size=50');
+        $mform->setType('command', PARAM_RAW);
+        $mform->setDefault('command', 'cp -R');
+        $mform->addElement('static', 'commandst', '', get_string('commandhelp', 'tool_upgradecopy'));
+        $mform->addRule('command', get_string('required'), 'required', null, 'client');
+
         $mform->addElement('text', 'pathfrom', get_string('pathfrom', 'tool_upgradecopy'), 'size="50"');
         $mform->setType('pathfrom', PARAM_RAW);
         $mform->addElement('static', 'pathfromst', '', get_string('pathfromhelp', 'tool_upgradecopy'));

@@ -49,13 +49,14 @@ echo $OUTPUT->box_start();
 $paths = \tool_upgradecopy\process::get_paths();
 $fromprefix = $data->pathfrom;
 $toprefix = $data->pathto;
-$command = "cp -R";
+$command = $data->command;
 echo "<pre>\n";
 foreach ($paths as $path) {
     echo "$command $fromprefix$path->from $toprefix$path->to\n";
 }
+echo "</pre>";
 echo $OUTPUT->box_end();
 
-echo $OUTPUT->continue_button(new moodle_url('/admin/index.php'));
+echo $OUTPUT->continue_button(new moodle_url('/admin/tool/upgradecopy/index.php'));
 
 echo $OUTPUT->footer();

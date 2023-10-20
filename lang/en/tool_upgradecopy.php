@@ -23,6 +23,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['command'] = 'Command';
+$string['commandhelp'] = 'Copy command (and any params) with which to prefix paths (default, cp -R)';
 $string['pageheader'] = 'Generate commands to copy all optional plugins to new Moodle';
 $string['pathfrom'] = 'Path from';
 $string['pathfromhelp'] = 'Path prefix for from part of copy';
