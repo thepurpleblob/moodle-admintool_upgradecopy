@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Search and replace strings throughout all texts in the whole database
+ * Simple tool to create copy commands for optional plugins
  *
  * @package    tool_upgradecopy
  * @copyright  Howard Miller 2003
