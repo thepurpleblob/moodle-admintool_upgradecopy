@@ -26,6 +26,9 @@ namespace tool_upgradecopy\privacy;
 
 defined('MOODLE_INTERNAL') || die();
 
+/**
+ * No data stored at all so null provider.
+ */
 class provider implements \core_privacy\local\metadata\null_provider {
 
     /**
