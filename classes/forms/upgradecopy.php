@@ -32,6 +32,10 @@ require_once("$CFG->libdir/formslib.php");
  * Site wide search-replace form.
  */
 class upgradecopy extends \moodleform {
+
+    /**
+     * Form definition for copy prefixes.
+     */
     public function definition() {
         global $CFG, $DB;
 

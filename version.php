@@ -17,9 +17,7 @@
 /**
  * Version details.
  *
- * @package    tool
- * @subpackage replace
- * @copyright  2011 Petr Skoda {@link http://skodak.org}
+ * @copyright  Howard Miller 2003
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

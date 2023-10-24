@@ -24,8 +24,15 @@
 
 namespace tool_upgradecopy;
 
+/**
+ * Contains functionality to get plugin data.
+ */
 class process {
 
+    /**
+     * Return array of objects containing from and to paths
+     * @return array
+     */
     public static function get_paths() {
         $manager = \core_plugin_manager::instance();
         $allplugins = $manager->get_plugins();

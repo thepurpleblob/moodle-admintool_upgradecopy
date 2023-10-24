@@ -17,7 +17,6 @@
 /**
  * Create copy commands for migraiting optional plugins
  *
- * @package    tool_upgradecpy
  * @copyright  Howard Miller 2003
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
