@@ -24,8 +24,6 @@
 
 namespace tool_upgradecopy\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * No data stored at all so null provider.
  */
