@@ -15,19 +15,26 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details.
+ * Privacy Subsystem implementation for tool_upgradecopy
  *
- * @package    tool
- * @subpackage replace
- * @copyright  2011 Petr Skoda {@link http://skodak.org}
+ * @package    tool_upgradecopy
+ * @copyright  Howard Miller 2003
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace tool_upgradecopy\privacy;
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2023102400; // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2022111800; // Requires this Moodle version.
-$plugin->component = 'tool_upgradecopy'; // Full name of the plugin (used for diagnostics).
-//
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = 'v1.1';
+class provider implements \core_privacy\local\metadata\null_provider {
+
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}
