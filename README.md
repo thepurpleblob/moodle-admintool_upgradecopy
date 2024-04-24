@@ -8,6 +8,9 @@ one. Making transferring plugins a bit easier
 
 ## Installation
 
+In case it's not obvious, this tool should be installed in the Moodle site you are
+copying the plugins FROM. There is no need to install it in the destination Moodle.
+
 Install as an admin tool so that it ends up in admin/tool/upgradecopy. Then go to site admin
 to complete installation
 
